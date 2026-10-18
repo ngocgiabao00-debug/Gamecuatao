@@ -1,0 +1,46 @@
+<button class="btn-play" onclick="goToCharacterSelect()">OPEN / PLAY</button>
+        </div>
+
+        <!-- TRANG CHỌN NHÂN VẬT -->
+        <div id="char-screen" class="screen">
+            <div class="nature-bg">
+                <div class="flying-object">🕊️ Chim bay...</div>
+                <div class="airplane">✈️ Máy bay...</div>
+            </div>
+
+            <h2>CHỌN NHÂN VẬT</h2>
+            
+            <div class="char-container">
+                <div class="char-card">
+                    <div class="avatar-box">
+                        <img src="nhanvat1.png" alt="Lực sĩ" class="body-img">
+                        <img src="khuonmat1.png" alt="Mặt 1" class="face-animated face-char1">
+                    </div>
+                    <button class="btn-select" onclick="selectChar('Nhân Vật Lực Sĩ')">CHỌN</button>
+                </div>
+
+                <div class="char-card">
+                    <div class="avatar-box">
+                        <img src="nhanvat2.png" alt="Nghèo khổ" class="body-img">
+                        <img src="khuonmat2.png" alt="Mặt 2" class="face-animated face-char2">
+                    </div>
+                    <button class="btn-select" onclick="selectChar('Nhân Vật Đói Khổ')">CHỌN</button>
+                </div>
+            </div>
+            
+            <p style="font-size: 13px; color: #fff; z-index: 1; font-weight: bold;">Chạm nút CHỌN bên dưới để bắt đầu!</p>
+        </div>
+    </div>
+
+    <script>
+        function goToCharacterSelect() {
+            document.getElementById('home-screen').style.display = 'none';
+            document.getElementById('char-screen').style.display = 'flex';
+        }
+
+        function selectChar(charName) {
+            alert("Bạn đã chọn: " + charName + "! Game chuẩn bị khởi chạy...");
+        }
+    </script>
+</body>
+              </html>
